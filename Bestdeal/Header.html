@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- Title Fevicon and header Metadata -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="icon" type="image/png" href="images/site/fevicon.png">
+<title>Best Deal</title>
+<meta name="keywords" content="The number One Electronics Retailer" />
+<meta name="description" content="We deal in all kinds of Smartphones, Tablets, Laptops, TVs, Offer price match and guaranteed best price"/>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body onload="init()">
+	<script type="text/javascript" src="javascript.js"></script>
+	<!-- Logo and content of the header-->
+	<div id="logo">
+		<table style="float: left">
+				<tr>
+				<td style="valign: top;"> <a href="Home#"> <img src="images/site/Dealz.jpg" alt="Home of Best Deals!!!" style="height: 80px" />
+				</a>
+				</td>
+				
+				<td><h1>
+						<a href="Home#">Best Deal</a>
+					</h1></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><p>
+						<em>Your Best Stop for Smartphones and Electronics</em>
+					</p></td>
+			</tr>
+		</table>
+		<!-- Search bar-->   <!--autocomplete="off" (before placeholder)-->
+		<div 
+			style="float: right; width: 30%; margin-top: 35px; border: 1px solid white; padding: 5px; padding-right: 15px">
+			<em style="color: white;">Search Product:</em>
+			<div name="autofillform">
+			<div class="input-group">
+				<input type="text" name="searchId" value="" class="input" id="searchId" onkeyup="doCompletion()" placeholder="search here.." style="padding: 5px; font-size: 16px;" />    <!--check this code for JS File-->
+			<div class="input-group-btn">
+            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>	
+			</div>	
+				<div id="auto-row">
+					<table id="complete-table" class="gridtable"
+						style="position: absolute; width: 315px;"></table>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<hr />
+
+	<!-- Menu fields -->
+	<div id="header">
+		<div id="menu">
+			<ul>
+				<li><a href="Home" class="first">Home</a></li>
+				<li><a href="LaptopsList">Laptops</a></li>
+				<li><a href="SmartphonesList">Smartphones</a></li>
+				<li><a href="TabletList">Tablets</a></li>
+				<li><a href="TabletList">TV</a></li> <!-- CREATE A SERVLET FOR TV -->
+				<li><a href="Trend">Trending</a></li>
+				<li><a href="DealMatches">Price Match</a></li>
+				
+			</ul>
+		</div>	
+		<!-- end #menu -->
+
+</body>
